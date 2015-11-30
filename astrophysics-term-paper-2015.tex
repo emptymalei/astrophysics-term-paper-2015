@@ -69,7 +69,6 @@ University of New Mexico%\\This line break forced with \textbackslash\textbacksl
 
 \date{\today}% It is always \today, today,
              %  but any date may be explicitly specified
-
 \begin{abstract}
 Abstract
 \end{abstract}
@@ -272,7 +271,7 @@ E_i^{(v)} & = \sqrt{m_i^2 + p_i^2 } \\
 
 We assume the neutrinos have almost the same momentum, which is true since their mass is small, i.e., $p_i \approx E$. To first order, the Hamiltonian becomes
 
-\begin{align}
+\begin{align*}
 H_v^{(v)} &= \frac{1}{2E} \begin{pmatrix}
 m_1^2 & 0 \\
 0 & m_2^2
@@ -280,11 +279,12 @@ m_1^2 & 0 \\
 & =  \frac{1}{4E} \begin{pmatrix}
 m_1^2 - m_2^2 & 0 \\
 0 & m_2^2 - m_1^2
-\end{pmatrix} + \frac{m_2^2 + m_1^2}{4E} \begin{pmatrix}
+\end{pmatrix} \\
+&\phantom{=}+ \frac{m_2^2 + m_1^2}{4E} \begin{pmatrix}
 1 & 0 \\
 0 & 1
 \end{pmatrix} + \mathbf{I},
-\end{align}
+\end{align*}
 
 where the identity matrices only give us an overall phase so we drop them. With the definition that $\Delta m^2 = m_2^2 - m_1^2$ The vacuum Hamiltonian in vacuum basis is simplify
 
@@ -332,6 +332,11 @@ Since neutrinos travel with velocity approximately the speed of light, we use $L
 \begin{equation}
 P(\nu_e,L) =  1-\sin^2(2\theta_v)\sin^2\left( \frac{\Delta m^2 L}{4E} \right).
 \end{equation}
+
+
+The important parameter is the oscillation length of the neutrino flavor conversion. Here we have the oscillation frequency $\omega = \frac{\Delta m^2}{2E}$.
+
+(Need a figure about the oscillation lengh here.)
 
 
 
@@ -388,7 +393,16 @@ E_2 &= -\frac{\omega}{2}\sqrt{ \hat\lambda +1 -  2\hat\lambda \cos 2\theta_v }.
 \end{align}
 
 
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{assets/mswEnergyLevels.jpg}
+\caption{The two energy levels in matter effect. The energy has unit $\omega/2$ while the potential has unit $\omega$.}
+\label{fig:mswEnergyLevels}
+\end{figure}
 
+Figure \ref{fig:mswEnergyLevels} shows the two energy levels. For very high matter density, which interact with electron neutrinos more through charged current, electron flavor is composed almost with heavy propagation eigenstate. However, as the matter density becomes lower, the heavy propagation state will be gradually transformed to the other flavors since electron flavor in vacuum is composed mostly the light mass state.
+
+In summary, even though only electron flavor neutrinos are produced in the core of a solar mass star, the neutrino flavor will be converted to the other flavors due to matter interaction.
 
 
 
