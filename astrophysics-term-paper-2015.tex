@@ -139,7 +139,7 @@ One of the neutrino factories is the stellar core. Numerous nuclear reactions as
 
 
 
-\subsection{Nuclear Reactions in Stars and Neutrino Flux}
+\subsection{Nuclear Reactions in Sun and Neutrino Flux}
 
 pp chain and CNO cycle are the most important nuclear reactions in a star. Through different stages of its life, a star experience different nuclear reactions. Figure \ref{fig:pp_Chain_Branching} shows the dominant energy source of solar mass stars. In order to calculate the neutrino spectrum we need the neutrino production rate in each reaction and the branching ratios. The processes that emits neutrinos are the red reactions in Fig \ref{fig:pp_Chain_Branching}, which explicitly are
 
@@ -213,15 +213,22 @@ Since we know each reaction produces 2 neutrinos while producing $Q_\gamma$, whi
 
 For such a large flux, understanding the role in stellar nuclear reaction and spectra is important.
 
+Inside our Sun, two additional reactions also produce neutrinos which are called pep and hep neutrinos.
 
+\begin{itemize}
+\item pep neutrinos are produced in 
+\begin{equation}
+\mathrm{p + e^- + p \to {}^2H +\nu_e},
+\end{equation}
+which is only has a branching ratio 0.4\% instead of the 99.6\% of pp reaction.
+\item hep neutrinos are produced in
+\begin{equation}
+\mathrm{ {}^3He + p \to {}^4He + e^+ \nu_e },
+\end{equation}
+which has a branching ratio of $2\times 10^{-5}\%$. As a comparison, the $\mathrm{{}^3He + {}^3He}$ has a branching ratio $85\%$ and $\mathrm{{}^3He + {}^4He}$ has a branching ratio $15\%$.
 
+\end{itemize}
 
-\begin{figure}[!hbtp]
-\centering
-\includegraphics[width=\columnwidth]{assets/pp_chain_vs_cno.png}
-\caption{The contribution to the luminosity by pp chain and CNO cycle as a function of temperature.\cite{Adelberger2011a} The black dot is at the solar core temperature.}
-\label{fig:pp_chain_vs_cno}
-\end{figure}
 
 
 
@@ -412,7 +419,19 @@ In summary, even though only electron flavor neutrinos are produced in the core 
 
 
 
-\section{Neutrino Energy}
+\section{Solar Neutrino Spectrum}
+
+
+The simplest model for the total neutrino flux generated due to solar nuclear reaction is simple linear superposition of solar neutrino flux from each reactions, since solar neutrinos are not dense enough to have a significant self-interaction. For the total neutrino flux $F$,
+
+\begin{equation}
+F(E) = \sum_i F_\alpha (E),
+\end{equation}
+
+where ${}_{\alpha}$ stands for flavor and $E$ is the energy of neutrinos. To generate the final solar neutrino spectra, the neutrino energy for each reaction should be examined.
+
+
+
 
 
 
@@ -428,6 +447,14 @@ In summary, even though only electron flavor neutrinos are produced in the core 
 \end{figure}
 
 
+
+
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=\columnwidth]{assets/pp_chain_vs_cno.png}
+\caption{The contribution to the luminosity by pp chain and CNO cycle as a function of temperature.\cite{Adelberger2011a} The black dot is at the solar core temperature.}
+\label{fig:pp_chain_vs_cno}
+\end{figure}
 
 
 
