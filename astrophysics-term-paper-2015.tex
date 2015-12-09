@@ -70,7 +70,7 @@ University of New Mexico%\\This line break forced with \textbackslash\textbacksl
 \date{\today}% It is always \today, today,
              %  but any date may be explicitly specified
 \begin{abstract}
-A term paper for astrophysics course reviewing the physics of solar neutrinos, with neutrino production, neutrino flavor mixing which is modified by matter interactions and thermal motion of nuclei, and finally the neutrino energy spectra of different nuclear reactions.
+A term paper for astrophysics course reviewing the physics of solar neutrinos, with neutrino production, neutrino flavor mixing which is modified by matter interactions and thermal motion of nuclei, and finally the neutrino energy spectra of different nuclear reactions. An simple analysis of supernova neutrino spectra shows that neutrino spectra for supernova are not well understood.
 \end{abstract}
 
 
@@ -571,10 +571,30 @@ Standard solar model produces a complete set of neutrino spectra from different 
 
 The solar neutrino spectra is not very different from lab experiments since solar neutrino flux is not high enough to interact with solar medium significantly. However, in a supernova explosion, $10^{58}$ neutrinos are released from the proto-neutron star, which is of radius $10\mathrm{km}$, in a few seconds. The huge number density of neutrinos and large density of matter have a huge effect on the neutrino spectra, especially for different flavors since matter has a huge effect on flavor conversion as we have already seen in MSW effect. The matter effect will be much more than MSW since the violent matter motion. In addition, neutrino neutrino interaction will be efficient because of the high neutrino number density.
 
-Apart from the emission of neutrinos from nuclear reactions of electron capture and positron emission in the solar interior, supernova environment also gives rise to Bremsstrahlung pair neutrino production, electron-positron neutrino pair production, which brings all three flavors and also anti-neutrinos into the spectra. However, even the with the presence of intensive interaction between neutrinos and the leptons and hadrons, the neutrino spectrum from the supernova core is not thermalized. Nonetheless, it is possible to parameterize it using nominal Fermi-Dirac distribution.\cite{Keil2003}
+Apart from the emission of neutrinos from nuclear reactions of electron capture and positron emission in the solar interior, supernova environment also gives rise to Bremsstrahlung pair neutrino production, electron-positron neutrino pair production, which brings all three flavors and also anti-neutrinos into the spectra. However, even the with the presence of intensive interaction between neutrinos and the leptons and hadrons, which thermalize the neutrinos in the supernova core, the neutrino spectrum escaping from the supernova core is not completely Fermi-Dirac spectrum. Nonetheless, it is possible to parametrize it using nominal Fermi-Dirac distribution,\cite{ysuzuki2004}
+
+\begin{equation}
+f(E)\propto \frac{E^2}{1+\exp ( E/kT - \mu )}.
+\end{equation}
+
+However, numerical results show that there is a deviation from this Fermi-Dirac distribution.\cite{Totani1998,Keil2003} Keil Mathias and Georg Raffelt showed that it is good enough to approximate the neutrino spectrum from supernova in Monte Carlo simulations using the so called "alpha fit",
+
+\begin{equation}
+f(E)\propto E^\alpha \exp\left( -(\alpha+1)\frac{E}{\langle E\rangle} \right),
+\end{equation}
+
+where $\langle E\rangle$ is the average energy, or the first moment of energy. The values from Monte Carlo simulations falls into the range $\alpha = 2.5\sim 5$, which clearly shows the spectra are pinched as explained in Figure \ref{fig:neutrino_spectra_sn_simulations}. Detection of deviation from nominal Fermi-Dirac distribution will show evidence of core-collapse information.
 
 
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{assets/neutrino_spectra_sn_simulations.png}
+\caption{Alpha fit and nominal Fermi-Dirac fit comparison. The top panel is alpha fit results while the middle panel is from nominal Fermi-Dirac distribution fit. The broadest curve are for $\alpha=2$. The width $w=\sqrt{\langle E^2 \rangle - \langle E\rangle^2}$ decrease 10\% for each curve. The bottom panel is the ratio of the two fit functions.}
+\label{fig:neutrino_spectra_sn_simulations}
+\end{figure}
 
+
+In this review, we presented the solar neutrino production, thermal modification, gravitational effect and flavor conversion, which leads to the theoretical predicted solar neutrino spectra for each reaction. Even though we understand solar neutrino well, overall the neutrino spectra of supernova are not so to our complete knowledge. Phenomena such as spectral split due to neutrino-neutrino interaction and matter effect reshape the spectra significantly. Future supernova neutrino observation data is needed to a better understanding of the supernova physics.
 
 
 
